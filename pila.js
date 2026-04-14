@@ -18,3 +18,10 @@ class Pila {
         return eliminado;
     }
 }
+
+const pila = new Pila();
+
+pila.push({ Nombre: "Orlando", Edad: 30 });
+pila.push({ Nombre: "Victor", Edad: 28 });
+
+pila.pop();
