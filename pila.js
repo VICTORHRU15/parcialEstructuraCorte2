@@ -1,5 +1,3 @@
-// Principio LIFO (Last In, First Out)
-
 let pila = [];
 
 // Agregar objetos
