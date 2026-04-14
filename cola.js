@@ -1,15 +1,13 @@
-// Principio FIFO (First In, First Out)
-
 let cola = [];
 
 // Agregar elementos
 cola.push(10);
-cola.push(20);
 cola.push(30);
+cola.push(27);
 
 console.log(cola);
 
-// Eliminar elemento (sale el primero)
+// Eliminar elemento
 let elementoEliminado = cola.shift();
 console.log("Eliminado:", elementoEliminado);
 
@@ -17,3 +15,7 @@ console.log("Eliminado:", elementoEliminado);
 let primero = cola[0];
 console.log("Primero:", primero);
 
+// Validar si está vacía
+if (cola.length === 0) {
+    console.log("La cola está vacía");
+}
