@@ -1,27 +1,23 @@
-class Pila {
-    constructor() {
-        this.items = [];
-    }
+// Principio LIFO (Last In, First Out)
 
-    push(obj) {
-        this.items.push(obj);
-        console.log("Elemento agregado:", obj);
-    }
+let pila = [];
 
-    pop() {
-        if (this.items.length === 0) {
-            console.log("La pila está vacía");
-            return null;
-        }
-        const eliminado = this.items.pop();
-        console.log("Elemento eliminado:", eliminado);
-        return eliminado;
-    }
-}
-
-const pila = new Pila();
-
+// Agregar objetos
 pila.push({ Nombre: "Orlando", Edad: 30 });
-pila.push({ Nombre: "Victor", Edad: 28 });
+pila.push({ Nombre: "Victor", Edad: 25 });
+pila.push({ Nombre: "Diego", Edad: 40 });
 
-pila.pop();
+console.log(pila);
+
+// Eliminar elemento
+let elementoEliminado = pila.pop();
+console.log("Eliminado:", elementoEliminado);
+
+// Mostrar el tope (último elemento)
+let tope = pila[pila.length - 1];
+console.log("Tope:", tope);
+
+// Validar si está vacía
+if (pila.length === 0) {
+    console.log("La pila está vacía");
+}
